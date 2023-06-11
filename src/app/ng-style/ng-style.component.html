@@ -1,0 +1,91 @@
+<mat-card>
+  <mat-card-title>
+    Select
+  </mat-card-title>
+  <mat-card-content>
+    <p>Select a color:</p>
+    <mat-radio-group [(ngModel)]="myColor" name="myColor">
+      <mat-radio-button value="blue">Blue</mat-radio-button>
+      <mat-radio-button value="red">Red</mat-radio-button>
+      <mat-radio-button value="green">Green</mat-radio-button>
+      <mat-radio-button value="yellow">Yellow</mat-radio-button>
+      <mat-radio-button value="pink">Pink</mat-radio-button>
+      <mat-radio-button value="purple">Purple</mat-radio-button>
+      <mat-radio-button value="brown">Brown</mat-radio-button>
+      <mat-radio-button value="Orange">Orange</mat-radio-button>
+      <mat-radio-button value="gray">gray</mat-radio-button>
+      <mat-radio-button value="White">White</mat-radio-button>
+      <mat-radio-button value="black">Black</mat-radio-button>
+      <mat-radio-button value="salmon">Salmon</mat-radio-button>
+      <mat-radio-button value="beige">Beige</mat-radio-button>
+      <mat-radio-button value="burgundy">Burgundy</mat-radio-button>
+    </mat-radio-group>
+    <br> <br>
+    Choose a font size:
+    <mat-form-field>
+      <mat-select placeholder="Enter a font size:" [(ngModel)]="myFontSize" name="myFontSize">
+        <mat-option value="12px">Font size: 12 </mat-option>
+        <mat-option value="16px">Font size: 16</mat-option>
+        <mat-option value="20px">Font size: 20</mat-option>
+        <mat-option value="25px">Font size: 25</mat-option>
+        <mat-option value="30px">Font size: 30</mat-option>
+        <mat-option value="35px">Font size: 35</mat-option>
+        <mat-option value="40px">Font size: 40</mat-option>
+        <mat-option value="45px">Font size: 45</mat-option>
+        <mat-option value="50px">Font size: 50</mat-option>
+        <mat-option value="55px">Font size: 55</mat-option>
+        <mat-option value="60px">Font size: 60</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Font style:" [(ngModel)]="myEstilo" name="myEstilo">
+        <mat-option value="Times New Roman">Font Times New Roman </mat-option>
+        <mat-option value=" Times">Times</mat-option>
+        <mat-option value="Arial">Arial</mat-option>
+        <mat-option value="Lucida Console">Lucida Console</mat-option>
+        <mat-option value="Courier New">Courier New</mat-option>
+        <mat-option value="Verdana">Verdana</mat-option>
+        <mat-option value="Trebuchet MS">Trebuchet MS</mat-option>
+        <mat-option value="Georgia">Georgia</mat-option>
+        <mat-option value="Comic Sans MS">Comic Sans MS</mat-option>
+        <mat-option value="Brush Script MT">Brush Script MT</mat-option>
+        <mat-option value="Impact">Impact</mat-option>
+        <mat-option value="Lucida Sans">Lucida Sans</mat-option>
+        <mat-option value="Constantia">Constantia</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Font weight" [(ngModel)]="pesoDaFonte" name="pesoDaFonte">
+        <mat-option value="bold">Bold</mat-option>
+        <mat-option value="italic">Italic </mat-option>
+        <mat-option value="100">100 </mat-option>
+        <mat-option value=" 200">200</mat-option>
+        <mat-option value="300">300</mat-option>
+        <mat-option value="400">400</mat-option>
+        <mat-option value="500">500</mat-option>
+        <mat-option value="600">600</mat-option>
+        <mat-option value="700">700</mat-option>
+        <mat-option value="800">800</mat-option>
+        <mat-option value="900">900</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Peso da fonte:" [(ngModel)]="estiloDeFonte" name="estiloDeFonte">
+        <mat-option value="normal">Normal</mat-option>
+
+        <mat-option value="bold">Bold</mat-option>
+        <mat-option value="bolder">Bolder</mat-option>
+        <mat-option value="lighter">Lighter</mat-option>
+        <mat-option value="inherit">Inherit</mat-option>
+        <mat-option value="initial">Initial</mat-option>
+        <mat-option value="unset">Unset</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-footer>
+    <p>Result</p>
+    <p [ngStyle]="{ fontSize: myFontSize, color: myColor,
+       fontFamily: myEstilo, fontWeight: pesoDaFonte,
+       fontStyle: estiloDeFonte }">Test</p>
+  </mat-card-footer>
+</mat-card>
