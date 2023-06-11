@@ -9,11 +9,15 @@ export class SubNgIfComponent implements OnInit{
 
 
   constructor() {
-    console.log("SubNgIfComponent")
+    console.log("SubNgIfComponent");
    }
 
   ngOnInit(): void {
-    
+
+  }
+
+  ngOnDestroy(){
+    console.log("SubNgIfComponent - ngOnDestroy");
   }
 
 }

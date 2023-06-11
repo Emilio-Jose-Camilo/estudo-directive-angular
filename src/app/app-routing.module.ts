@@ -5,6 +5,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
+import { NgForComponent } from './ng-for/ng-for.component';
+import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path: 'app-sub-ng-if',
     component: SubNgIfComponent
+  },
+  {
+    path: 'app-ng-for',
+    component: NgForComponent
+  },
+  {
+    path: 'app-ng-for-form',
+    component: NgForFormComponent
   }
 ];
 
