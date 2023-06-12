@@ -1,1 +1,30 @@
-<p>ng-for-form works!</p>
+<mat-card>
+    <mat-card-content>
+        <section>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Frist Name" name="First Name" [(ngModel)]="name">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Address" name="address" [(ngModel)]="address">
+                <mat-icon matSuffix="">home</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="phone" name="phone" [(ngModel)]="phone" [(ngModel)]="phone">
+                <mat-icon matSuffix="">phone</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="City" [(ngModel)]="city" name="city">
+                    <mat-option *ngFor="let city of cities" [value]="city.name">{{ city.name }} - {{ city.state }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Age" name="age" [(ngModel)]="age">
+            </mat-form-field>
+        </section>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="save()">Save</button>
+        <button mat-raised-button color="Warn" (click)="cancel()">Cancel</button>
+    </mat-card-actions>
+</mat-card>
