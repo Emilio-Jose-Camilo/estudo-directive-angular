@@ -7,6 +7,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,14 @@ const routes: Routes = [
   {
     path: 'app-ng-for-form',
     component: NgForFormComponent
+  },
+  {
+    path: 'app-ng-switch',
+    component: NgSwitchComponent
+  },
+  {
+    path: 'app-ng-template',
+    component: NgTemplateComponent
   }
 ];
 

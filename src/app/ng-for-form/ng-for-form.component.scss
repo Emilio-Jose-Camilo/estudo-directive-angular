@@ -1,14 +1,16 @@
-mat-card {
-    margin: 20px;
 
+.form-field {
+
+    width: 100%;
 }
 
-.form-field {}
-
-section {
+.section {
     display: flex;
     flex-direction: column;
 }
 button {
     margin: 5px;
+}
+.card {
+    display: flex;
 }

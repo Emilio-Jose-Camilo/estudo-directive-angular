@@ -12,6 +12,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +26,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,9 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
     NgIfComponent,
     SubNgIfComponent,
     NgForComponent,
-    NgForFormComponent
+    NgForFormComponent,
+    NgSwitchComponent,
+    NgTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +59,9 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
     MatSelectModule,
     MatInputModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatProgressBarModule,
+    MatDialogModule
 
   ],
   providers: [],

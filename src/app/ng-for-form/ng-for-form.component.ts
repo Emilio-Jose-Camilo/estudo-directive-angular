@@ -71,4 +71,7 @@ export class NgForFormComponent implements OnInit {
     this.phone = "";
     this.age = 0;
   }
+  delete(i: number) {
+    this.clients.splice(i, 1)
+  }
 }
